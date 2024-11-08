@@ -448,14 +448,22 @@ legend + * {
   -webkit-appearance: textfield;
 }
 
-/* rtl:raw:
-[type="tel"],
-[type="url"],
-[type="email"],
-[type="number"] {
-  direction: ltr;
+.gradient-container {
+  background: linear-gradient(to bottom right, #003366, #cc6699);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
-*/
+
+/* Dégradé pour chaque section */
+.gradient-text {
+  background: linear-gradient(to bottom right, #003366, #cc6699);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -11749,3 +11757,4 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
